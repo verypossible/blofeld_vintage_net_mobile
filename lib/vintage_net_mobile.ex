@@ -129,7 +129,7 @@ defmodule VintageNetMobile do
       ifname: ifname,
       type: __MODULE__,
       source_config: config,
-      required_ifnames: [ppp_to_wwan(ifname)]
+      required_ifnames: []
     }
     |> modem.add_raw_config(config, opts)
     |> add_start_commands(modem)
